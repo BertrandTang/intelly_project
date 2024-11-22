@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- becareful when cloning this project, paths might change as the original project is hosted in a folder in another folder -->
+    <link rel="stylesheet" href="/intelly_project/public/css/reset.css" />
+    <link rel="stylesheet" href="/intelly_project/public/css/intelly_project.css" />
+    <title>Intelly Project</title>
+</head>
+
+<body>
+    <header>
+        <nav class="topbar">
+            <ul class="topbar_el_list">
+                <li class="topbar_el logotype">
+                    <img src="/intelly_project/public/logos/logotype.png" alt="Intelly Project logo" />
+                </li>
+                <li class="topbar_el searchbar">
+                    <input type="search" placeholder="Search..." /><img
+                        src="/intelly_project/public/icons/magnifying_glass_icon.svg" alt="Magnifying glass icon" />
+                </li>
+                <li class="topbar_el user_setting">
+                    <img src="/intelly_project/public/icons/burger_icon.svg" alt="Burger icon" />
+                    <h4>Delicious Burger</h4>
+                    <img src="/intelly_project/public/icons/dropdown_arrow_icon.svg" alt="Dropdown arrow icon" />
+                </li>
+                <li class="topbar_el notif_bell">
+                    <img src="/intelly_project/public/icons/bell_icon.svg" alt="Bell icon" /><img
+                        src="/intelly_project/public/icons/red_dot_icon.svg" alt="Red dot notification icon" />
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <nav class="sidebar">
+            <h5>MENU</h5>
+            <ul class="sidebar_menu">
+                <li class="sidebar_el dashboard">
+                    <img src="/intelly_project/public/icons/dashboard_icon.svg" alt="Dashboard icon" />
+                    <h4>Dashboard</h4>
+                </li>
+                <li class="sidebar_el order">
+                    <img src="/intelly_project/public/icons/order_icon.svg" alt="Order icon" />
+                    <h4>Order</h4>
+                </li>
+                <li class="sidebar_el report">
+                    <img src="/intelly_project/public/icons/report_icon.svg" alt="Report icon" />
+                    <h4>Report</h4>
+                </li>
+                <li class="sidebar_el track">
+                    <img src="/intelly_project/public/icons/track_icon.svg" alt="Track icon" />
+                    <h4>Track</h4>
+                </li>
+                <li class="sidebar_el maintenance">
+                    <img src="/intelly_project/public/icons/maintenance_icon.svg" alt="Maintenance icon" />
+                    <h4>Maintenance</h4>
+                </li>
+            </ul>
+            <h5>SYSTEM</h5>
+            <ul class="sidebar_system">
+
+                <li class="sidebar_el master_data">
+                    <img src="/intelly_project/public/icons/master_data_icon.svg" alt="Master data icon" />
+                    <h4>Master Data</h4>
+                </li>
+                <li class="sidebar_el user">
+                    <img src="/intelly_project/public/icons/user_icon.svg" alt="User icon" />
+                    <h4>User</h4>
+                </li>
+                <li class="sidebar_el user">
+                    <img src="/intelly_project/public/icons/role_icon.svg" alt="Role icon" />
+                    <h4>Role</h4>
+                </li>
+            </ul>
+        </nav>
+        <section class="dashboard">
+            <h1>Dashboard</h1>
+            <ul class="statistics_board">
+                <li class="statistics_board_overview">
+                    <ul class="statistics_overview_card_list">
+                        <li class="statistics_overview_card">
+                            <img src="/intelly_project/public/icons/gradient2_truck_icon.svg" alt="Gradient truck icon">
+                            <ul class="statistics_overview_cardinfo">
+                                <li class="statistics_overview_cardstats">
+                                    <p>2.409</p>
+                                    <ul class="cardstats_modifyer_list">
+                                        <li class="cardstats_modifyer">
+                                            <img src="/intelly_project/public/icons/arrow_up_icon.svg"
+                                                alt="Arrow up icon">
+                                        </li>
+                                        <li class="cardstats_modifyer">
+                                            <p class="stat_increase">2.1%</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="statistics_overview_cardname">
+                                    <p>Jumlah Pemesan</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="statistics_overview_card">
+                            <img src="/intelly_project/public/icons/green_truck_icon.svg" alt="Green truck icon">
+                            <ul class="statistics_overview_cardinfo">
+                                <li class="statistics_overview_cardstats">
+                                    <p>68.9%</p>
+                                </li>
+                                <li class="statistics_overview_cardname">
+                                    <p>Pesanan Selesai</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="statistics_overview_card">
+                            <img src="/intelly_project/public/icons/gradient1_truck_icon.svg" alt="Gradient truck icon">
+                            <ul class="statistics_overview_cardinfo">
+                                <li class="statistics_overview_cardstats">
+                                    <p>68.9%</p>
+                                </li>
+                                <li class="statistics_overview_cardname">
+                                    <p>KPI Driver</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="statistics_overview_card">
+                            <img src="/intelly_project/public/icons/red_truck_icon.svg" alt="Red truck icon">
+                            <ul class="statistics_overview_cardinfo">
+                                <li class="statistics_overview_cardstats">
+                                    <p>3.509</p>
+                                </li>
+                                <li class="statistics_overview_cardname">
+                                    <p>Total Customer</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="statistics_board_indepth">
+                    <ul class="statistics_indepth_list">
+                        <li class="statistics_indepth_titlegraph">
+                            <ul class="indepth_titlegraph">
+                                <li class="statistics_indepth_info">
+                                    <h2>Statistik Pemesanan</h2>
+                                    <div class="indepth_date">
+                                        <img src="/intelly_project/public/icons/calendar_icon.svg" alt="calendar icon">
+                                        <p>18/12/2021</p>
+                                    </div>
+                                </li>
+                                <li class="graph_block">
+                                    <img src="/intelly_project/public/img/graph.png" alt="graph">
+                                    <!-- <div class="graph_container">
+                                        <div class="bar" style="height: 80%;"></div>
+                                        <div class="bar" style="height: 50%;"></div>
+                                        <div class="bar" style="height: 65%;"></div>
+                                        <div class="bar" style="height: 25%;"></div>
+                                        <div class="bar" style="height: 50%;"></div>
+                                        <div class="bar" style="height: 70%;"></div>
+                                        <div class="bar" style="height: 40%;"></div>
+                                        <div class="bar" style="height: 85%;"></div>
+                                        <div class="bar" style="height: 70%;"></div>
+                                        <div class="bar" style="height: 55%;"></div>
+                                        <div class="bar" style="height: 80%;"></div>
+                                        <div class="bar" style="height: 65%;"></div>
+                                    </div> -->
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="statistics_indepth_customers">
+                            <h2>Customer Pemesan Terbanyak</h2>
+                            <ul class="statistics_indepth_customers_list">
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">PT Javan Cipta Solusi</p>
+                                    <p class="customer_number">450</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">CV ABCD</p>
+                                    <p class="customer_number">449</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">CV OQURY TRESNA ANJANI</p>
+                                    <p class="customer_number">443</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">PT Javan Solusi</p>
+                                    <p class="customer_number">441</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">PT Insan Cipta Solusi</p>
+                                    <p class="customer_number">420</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">PT Mitra Informatika</p>
+                                    <p class="customer_number">412</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">PT Gamatechno Indonesia</p>
+                                    <p class="customer_number">411</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">Patra Jasa</p>
+                                    <p class="customer_number">390</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">Patra Arun Badak</p>
+                                    <p class="customer_number">387</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">Pertamina Corporate University</p>
+                                    <p class="customer_number">376</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">Pertamina RU IV</p>
+                                    <p class="customer_number">361</p>
+                                </li>
+                                <li class="statistics_indepth_customer">
+                                    <p class="customer_name">PT Pertamina Kilang Balikpapan</p>
+                                    <p class="customer_number">355</p>
+                                </li>
+                            </ul>
+
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        </li>
+        </ul>
+        <section class="overview">
+            <ul class="overview_board">
+                <li class="overview_info">
+                    <h2>Overview Pemesanan</h2>
+                    <input type="search" placeholder="Search..." />
+                </li>
+                <li class="overview_customers">
+                    <ul class="overview_customers_list">
+                        <li class="customer_line titles">
+                            <ul class="customer_info_list titles">
+                                <li class="customer_info no">
+                                    <h4>No</h4>
+                                </li>
+                                <li class="customer_info name">
+                                    <h4>Nama Customer</h4>
+                                </li>
+                                <li class="customer_info type">
+                                    <h4>Jenis</h4>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <h4>Kuantitas</h4>
+                                </li>
+                                <li class="customer_info date">
+                                    <h4>Tanggal Pengiriman</h4>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>1</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Brad Simmons</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Pertamax</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>21 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>2</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Jessica Clarcson</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Turbo</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>20 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>1</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Brad Simmons</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Turbo</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>21 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>2</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Jessica Clarcson</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Turbo</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>20 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>1</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Brad Simmons</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Pertamax</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>21 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>2</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Jessica Clarcson</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Turbo</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>21 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="customer_line">
+                            <ul class="customer_info_list">
+                                <li class="customer_info no">
+                                    <p>1</p>
+                                </li>
+                                <li class="customer_info name">
+                                    <p>Brad Simmons</p>
+                                </li>
+                                <li class="customer_info type">
+                                    <p>Pertamax</p>
+                                </li>
+                                <li class="customer_info quantity">
+                                    <p>2000 Liter</p>
+                                </li>
+                                <li class="customer_info date">
+                                    <p>21 Desember 2021</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <nav class="overview_page_select">
+                <ul class="page_select_list">
+                    <li class="previous">
+                        <p><a href="#">Prev</a></p>
+                    </li>
+                    <li class="page_numbers">
+                        <ul class="page_number_list">
+                            <li class="page_number">
+                                <p>1</p>
+                            </li>
+                            <li class="page_number">
+                                <p>2</p>
+                            </li>
+                            <li class="page_number">
+                                <p>3</p>
+                            </li>
+                            <li class="page_number">
+                                <p>4</p>
+                            </li>
+                            <li class="page_number">
+                                <p>5</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="next">
+                        <p><a href="#">Next</a></p>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+        </section>
+    </main>
+</body>
+
+</html>
